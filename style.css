@@ -1,0 +1,101 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li,a,button{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    width: auto;
+    height: 40px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3 ease 0s;
+}
+.nav__links li a:hover{
+    color:rgb(0, 185, 185);
+}
+button{
+    margin-left: 80px;
+    padding: 9px 25px;
+    background-color: rgb(0, 185, 185);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+button:hover{
+    background-color: #000000;
+}
+.vendor{
+    padding-left: 20px;
+
+}
+.fa-solid{
+    padding-right: 10px;
+}
+.search-box{
+    display: flex;
+    height: 30px;
+    line-height: 35px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.search-box span{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background: #fff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.search-box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.search-box span:hover{
+    color: #fff;
+}
+.search-box span:hover::after{
+    width: 100%;
+}
+.logo{
+    padding-right: 80px;
+    width: 210px;
+    
+}
